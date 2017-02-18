@@ -12,6 +12,10 @@ import FBSDKLoginKit
 
 class SignInVC: UIViewController {
 
+  
+    @IBOutlet weak var emailMenu: FancyView!
+    @IBOutlet weak var facebookSignIn: FancyView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,7 +32,6 @@ class SignInVC: UIViewController {
         })
     }
     
-    
     @IBAction func facebookTapped(_ sender: Any) {
         let facebookLoginManager = FBSDKLoginManager()
         
@@ -44,4 +47,21 @@ class SignInVC: UIViewController {
             }
         }
     }
+    
+    @IBAction func emailSignInTapped(_ sender: Any) {
+        emailMenu.isHidden = false
+        facebookSignIn.isUserInteractionEnabled = false
+    }
+    
+    @IBAction func okButtonTapped(_ sender: Any) {
+        
+    }
+    
+    @IBAction func cancelButtonTapped(_ sender: Any) {
+        emailMenu.isHidden = true
+        view.endEditing(true)
+        facebookSignIn.isUserInteractionEnabled = true
+    }
+    
+    
 }

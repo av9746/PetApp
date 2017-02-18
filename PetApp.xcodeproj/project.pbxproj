@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		260189731E584183008F9A02 /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260189721E584183008F9A02 /* FancyView.swift */; };
 		260189781E58584B008F9A02 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260189771E58584B008F9A02 /* DataService.swift */; };
+		2601897D1E58ADAF008F9A02 /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2601897C1E58ADAF008F9A02 /* FancyButton.swift */; };
 		269A93841E57AD4C00DE21A4 /* Amazing.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 269A93831E57AD4C00DE21A4 /* Amazing.ttf */; };
 		26FBDA441E579F3E00E3BB4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FBDA431E579F3E00E3BB4F /* AppDelegate.swift */; };
 		26FBDA491E579F3E00E3BB4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26FBDA471E579F3E00E3BB4F /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 		260189721E584183008F9A02 /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
 		260189771E58584B008F9A02 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		260189791E585E8E008F9A02 /* PetApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PetApp.entitlements; sourceTree = "<group>"; };
+		2601897C1E58ADAF008F9A02 /* FancyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
 		269A93831E57AD4C00DE21A4 /* Amazing.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Amazing.ttf; sourceTree = "<group>"; };
 		26FBDA401E579F3E00E3BB4F /* PetApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26FBDA431E579F3E00E3BB4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				260189721E584183008F9A02 /* FancyView.swift */,
+				2601897C1E58ADAF008F9A02 /* FancyButton.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				26FBDA441E579F3E00E3BB4F /* AppDelegate.swift in Sources */,
 				260189731E584183008F9A02 /* FancyView.swift in Sources */,
 				260189781E58584B008F9A02 /* DataService.swift in Sources */,
+				2601897D1E58ADAF008F9A02 /* FancyButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
