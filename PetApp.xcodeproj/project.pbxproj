@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		260189731E584183008F9A02 /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260189721E584183008F9A02 /* FancyView.swift */; };
+		260189781E58584B008F9A02 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260189771E58584B008F9A02 /* DataService.swift */; };
 		269A93841E57AD4C00DE21A4 /* Amazing.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 269A93831E57AD4C00DE21A4 /* Amazing.ttf */; };
 		26FBDA441E579F3E00E3BB4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FBDA431E579F3E00E3BB4F /* AppDelegate.swift */; };
 		26FBDA491E579F3E00E3BB4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26FBDA471E579F3E00E3BB4F /* Main.storyboard */; };
@@ -21,6 +22,8 @@
 /* Begin PBXFileReference section */
 		0648C6C23DDF0281D52FF767 /* Pods-PetApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-PetApp/Pods-PetApp.release.xcconfig"; sourceTree = "<group>"; };
 		260189721E584183008F9A02 /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
+		260189771E58584B008F9A02 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		260189791E585E8E008F9A02 /* PetApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PetApp.entitlements; sourceTree = "<group>"; };
 		269A93831E57AD4C00DE21A4 /* Amazing.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Amazing.ttf; sourceTree = "<group>"; };
 		26FBDA401E579F3E00E3BB4F /* PetApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26FBDA431E579F3E00E3BB4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		260189761E585837008F9A02 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				260189771E58584B008F9A02 /* DataService.swift */,
+			);
+			name = services;
+			sourceTree = "<group>";
+		};
 		269A93821E57AC1F00DE21A4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +86,8 @@
 		26FBDA421E579F3E00E3BB4F /* PetApp */ = {
 			isa = PBXGroup;
 			children = (
+				260189791E585E8E008F9A02 /* PetApp.entitlements */,
+				260189761E585837008F9A02 /* services */,
 				26FBDA431E579F3E00E3BB4F /* AppDelegate.swift */,
 				269A93821E57AC1F00DE21A4 /* Resources */,
 				26FBDA591E57A60200E3BB4F /* Model */,
@@ -166,6 +179,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 6KV3SC8LP9;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -258,6 +276,7 @@
 				26FBDA5B1E57A63200E3BB4F /* SignInVC.swift in Sources */,
 				26FBDA441E579F3E00E3BB4F /* AppDelegate.swift in Sources */,
 				260189731E584183008F9A02 /* FancyView.swift in Sources */,
+				260189781E58584B008F9A02 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,8 +403,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PetApp/PetApp.entitlements;
 				DEVELOPMENT_TEAM = 6KV3SC8LP9;
 				INFOPLIST_FILE = PetApp/Info.plist;
+				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AnzeVavken.PetApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -400,8 +421,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PetApp/PetApp.entitlements;
 				DEVELOPMENT_TEAM = 6KV3SC8LP9;
 				INFOPLIST_FILE = PetApp/Info.plist;
+				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AnzeVavken.PetApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";

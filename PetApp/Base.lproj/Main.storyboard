@@ -34,14 +34,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="devslopes-logo" translatesAutoresizingMaskIntoConstraints="NO" id="WUP-hY-2mj">
-                                        <rect key="frame" x="35" y="120" width="250" height="120"/>
+                                        <rect key="frame" x="35" y="100" width="250" height="120"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="120" id="aYh-gO-NVU"/>
                                             <constraint firstAttribute="width" constant="250" id="sAM-fN-Cft"/>
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="31i-J7-UWD">
-                                        <rect key="frame" x="35.5" y="385.5" width="250" height="110"/>
+                                        <rect key="frame" x="35.5" y="335.5" width="250" height="110"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hLb-aT-xlJ" customClass="FancyView" customModule="PetApp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="250" height="50"/>
@@ -59,9 +59,13 @@
                                                     </label>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.0" green="0.47563570737838745" blue="0.76373487710952759" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="hm6-JD-UiV"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="hbK-kG-jj1" appends="YES" id="y5n-oC-MIE"/>
+                                                </connections>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HBd-eZ-Elu" customClass="FancyView" customModule="PetApp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="60" width="250" height="50"/>
@@ -92,7 +96,7 @@
                                         </constraints>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pet App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ac-SI-jCb">
-                                        <rect key="frame" x="43" y="250" width="234" height="85.5"/>
+                                        <rect key="frame" x="43" y="230" width="234" height="85.5"/>
                                         <fontDescription key="fontDescription" name="InfiniteStroke-Bolder" family="Infinite Stroke" pointSize="61"/>
                                         <color key="textColor" red="0.89759618043899536" green="0.37111112475395203" blue="0.17514047026634216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -101,10 +105,10 @@
                                 <color key="backgroundColor" red="0.0" green="0.72156862749999995" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="31i-J7-UWD" firstAttribute="centerX" secondItem="2MG-4N-mPG" secondAttribute="centerX" id="A8I-Xu-EQ9"/>
-                                    <constraint firstItem="31i-J7-UWD" firstAttribute="top" secondItem="1Ac-SI-jCb" secondAttribute="bottom" constant="50" id="P3a-6z-mkL"/>
+                                    <constraint firstItem="31i-J7-UWD" firstAttribute="top" secondItem="1Ac-SI-jCb" secondAttribute="bottom" constant="20" id="P3a-6z-mkL"/>
                                     <constraint firstItem="1Ac-SI-jCb" firstAttribute="centerX" secondItem="2MG-4N-mPG" secondAttribute="centerX" id="Uj6-HX-thx"/>
                                     <constraint firstItem="1Ac-SI-jCb" firstAttribute="top" secondItem="WUP-hY-2mj" secondAttribute="bottom" constant="10" id="fsy-WG-3Ta"/>
-                                    <constraint firstItem="WUP-hY-2mj" firstAttribute="top" secondItem="2MG-4N-mPG" secondAttribute="top" constant="120" id="rze-oI-6Ma"/>
+                                    <constraint firstItem="WUP-hY-2mj" firstAttribute="top" secondItem="2MG-4N-mPG" secondAttribute="top" constant="100" id="rze-oI-6Ma"/>
                                     <constraint firstItem="WUP-hY-2mj" firstAttribute="centerX" secondItem="2MG-4N-mPG" secondAttribute="centerX" id="wVz-hy-WpA"/>
                                 </constraints>
                             </view>
@@ -119,6 +123,11 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="hbK-kG-jj1">
+                    <connections>
+                        <action selector="facebookTapped:" destination="BYZ-38-t0r" id="9x4-Vq-VoD"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
         </scene>
