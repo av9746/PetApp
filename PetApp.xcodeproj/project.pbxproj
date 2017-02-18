@@ -7,25 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		260189731E584183008F9A02 /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260189721E584183008F9A02 /* FancyView.swift */; };
+		269A93841E57AD4C00DE21A4 /* Amazing.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 269A93831E57AD4C00DE21A4 /* Amazing.ttf */; };
 		26FBDA441E579F3E00E3BB4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FBDA431E579F3E00E3BB4F /* AppDelegate.swift */; };
-		26FBDA461E579F3E00E3BB4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FBDA451E579F3E00E3BB4F /* ViewController.swift */; };
 		26FBDA491E579F3E00E3BB4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26FBDA471E579F3E00E3BB4F /* Main.storyboard */; };
 		26FBDA4B1E579F3E00E3BB4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26FBDA4A1E579F3E00E3BB4F /* Assets.xcassets */; };
 		26FBDA4E1E579F3E00E3BB4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26FBDA4C1E579F3E00E3BB4F /* LaunchScreen.storyboard */; };
 		26FBDA561E57A27100E3BB4F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26FBDA551E57A27100E3BB4F /* GoogleService-Info.plist */; };
+		26FBDA5B1E57A63200E3BB4F /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FBDA5A1E57A63200E3BB4F /* SignInVC.swift */; };
 		CE44C695EE75508726F1E6FB /* Pods_PetApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6856BF95853BA034C29B790 /* Pods_PetApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0648C6C23DDF0281D52FF767 /* Pods-PetApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-PetApp/Pods-PetApp.release.xcconfig"; sourceTree = "<group>"; };
+		260189721E584183008F9A02 /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
+		269A93831E57AD4C00DE21A4 /* Amazing.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Amazing.ttf; sourceTree = "<group>"; };
 		26FBDA401E579F3E00E3BB4F /* PetApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26FBDA431E579F3E00E3BB4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		26FBDA451E579F3E00E3BB4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		26FBDA481E579F3E00E3BB4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		26FBDA4A1E579F3E00E3BB4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26FBDA4D1E579F3E00E3BB4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26FBDA4F1E579F3E00E3BB4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26FBDA551E57A27100E3BB4F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		26FBDA5A1E57A63200E3BB4F /* SignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		6FDEB4A8DDD48F3C46B96491 /* Pods-PetApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PetApp/Pods-PetApp.debug.xcconfig"; sourceTree = "<group>"; };
 		A6856BF95853BA034C29B790 /* Pods_PetApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -42,6 +46,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		269A93821E57AC1F00DE21A4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				269A93831E57AD4C00DE21A4 /* Amazing.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		26FBDA371E579F3E00E3BB4F = {
 			isa = PBXGroup;
 			children = (
@@ -64,14 +76,40 @@
 			isa = PBXGroup;
 			children = (
 				26FBDA431E579F3E00E3BB4F /* AppDelegate.swift */,
-				26FBDA451E579F3E00E3BB4F /* ViewController.swift */,
+				269A93821E57AC1F00DE21A4 /* Resources */,
+				26FBDA591E57A60200E3BB4F /* Model */,
+				26FBDA581E57A5FA00E3BB4F /* View */,
+				26FBDA571E57A5E000E3BB4F /* Controller */,
 				26FBDA471E579F3E00E3BB4F /* Main.storyboard */,
-				26FBDA4A1E579F3E00E3BB4F /* Assets.xcassets */,
 				26FBDA4C1E579F3E00E3BB4F /* LaunchScreen.storyboard */,
 				26FBDA4F1E579F3E00E3BB4F /* Info.plist */,
 				26FBDA551E57A27100E3BB4F /* GoogleService-Info.plist */,
+				26FBDA4A1E579F3E00E3BB4F /* Assets.xcassets */,
 			);
 			path = PetApp;
+			sourceTree = "<group>";
+		};
+		26FBDA571E57A5E000E3BB4F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				26FBDA5A1E57A63200E3BB4F /* SignInVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		26FBDA581E57A5FA00E3BB4F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				260189721E584183008F9A02 /* FancyView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		26FBDA591E57A60200E3BB4F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		391319BE837779070D1F8944 /* Pods */ = {
@@ -156,6 +194,7 @@
 			files = (
 				26FBDA4E1E579F3E00E3BB4F /* LaunchScreen.storyboard in Resources */,
 				26FBDA561E57A27100E3BB4F /* GoogleService-Info.plist in Resources */,
+				269A93841E57AD4C00DE21A4 /* Amazing.ttf in Resources */,
 				26FBDA4B1E579F3E00E3BB4F /* Assets.xcassets in Resources */,
 				26FBDA491E579F3E00E3BB4F /* Main.storyboard in Resources */,
 			);
@@ -216,8 +255,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26FBDA461E579F3E00E3BB4F /* ViewController.swift in Sources */,
+				26FBDA5B1E57A63200E3BB4F /* SignInVC.swift in Sources */,
 				26FBDA441E579F3E00E3BB4F /* AppDelegate.swift in Sources */,
+				260189731E584183008F9A02 /* FancyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +301,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -311,6 +352,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -340,6 +382,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6FDEB4A8DDD48F3C46B96491 /* Pods-PetApp.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6KV3SC8LP9;
 				INFOPLIST_FILE = PetApp/Info.plist;
@@ -347,6 +390,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = AnzeVavken.PetApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -354,6 +398,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0648C6C23DDF0281D52FF767 /* Pods-PetApp.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6KV3SC8LP9;
 				INFOPLIST_FILE = PetApp/Info.plist;
@@ -361,6 +406,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = AnzeVavken.PetApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
