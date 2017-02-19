@@ -10,6 +10,8 @@
 		260189731E584183008F9A02 /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260189721E584183008F9A02 /* FancyView.swift */; };
 		260189781E58584B008F9A02 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260189771E58584B008F9A02 /* DataService.swift */; };
 		2601897D1E58ADAF008F9A02 /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2601897C1E58ADAF008F9A02 /* FancyButton.swift */; };
+		262220AC1E598C5B005C0566 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262220AB1E598C5B005C0566 /* constants.swift */; };
+		262220AE1E59943B005C0566 /* NewsFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262220AD1E59943B005C0566 /* NewsFeedVC.swift */; };
 		269A93841E57AD4C00DE21A4 /* Amazing.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 269A93831E57AD4C00DE21A4 /* Amazing.ttf */; };
 		26FBDA441E579F3E00E3BB4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FBDA431E579F3E00E3BB4F /* AppDelegate.swift */; };
 		26FBDA491E579F3E00E3BB4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26FBDA471E579F3E00E3BB4F /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 		260189771E58584B008F9A02 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		260189791E585E8E008F9A02 /* PetApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PetApp.entitlements; sourceTree = "<group>"; };
 		2601897C1E58ADAF008F9A02 /* FancyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
+		262220AB1E598C5B005C0566 /* constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
+		262220AD1E59943B005C0566 /* NewsFeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsFeedVC.swift; sourceTree = "<group>"; };
 		269A93831E57AD4C00DE21A4 /* Amazing.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Amazing.ttf; sourceTree = "<group>"; };
 		26FBDA401E579F3E00E3BB4F /* PetApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26FBDA431E579F3E00E3BB4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +63,14 @@
 			name = services;
 			sourceTree = "<group>";
 		};
+		262220AA1E598C33005C0566 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				262220AB1E598C5B005C0566 /* constants.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
 		269A93821E57AC1F00DE21A4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +100,7 @@
 		26FBDA421E579F3E00E3BB4F /* PetApp */ = {
 			isa = PBXGroup;
 			children = (
+				262220AA1E598C33005C0566 /* Utilities */,
 				260189791E585E8E008F9A02 /* PetApp.entitlements */,
 				260189761E585837008F9A02 /* services */,
 				26FBDA431E579F3E00E3BB4F /* AppDelegate.swift */,
@@ -108,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				26FBDA5A1E57A63200E3BB4F /* SignInVC.swift */,
+				262220AD1E59943B005C0566 /* NewsFeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -277,10 +291,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				26FBDA5B1E57A63200E3BB4F /* SignInVC.swift in Sources */,
+				262220AE1E59943B005C0566 /* NewsFeedVC.swift in Sources */,
 				26FBDA441E579F3E00E3BB4F /* AppDelegate.swift in Sources */,
 				260189731E584183008F9A02 /* FancyView.swift in Sources */,
 				260189781E58584B008F9A02 /* DataService.swift in Sources */,
 				2601897D1E58ADAF008F9A02 /* FancyButton.swift in Sources */,
+				262220AC1E598C5B005C0566 /* constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

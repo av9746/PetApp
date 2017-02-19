@@ -133,13 +133,13 @@
                                                 <rect key="frame" x="0.0" y="45" width="242" height="34.5"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Reenter password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SB2-Ez-Nof">
                                                 <rect key="frame" x="0.0" y="89.5" width="242" height="35"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -206,7 +206,11 @@
                     </view>
                     <connections>
                         <outlet property="emailMenu" destination="o0G-95-aR1" id="eAq-6U-ixC"/>
+                        <outlet property="emailTextField" destination="rNn-zb-FPl" id="CTm-Ba-aoK"/>
                         <outlet property="facebookSignIn" destination="hLb-aT-xlJ" id="wRJ-uk-VDz"/>
+                        <outlet property="passwordTextField" destination="Hyw-SO-Slu" id="bAW-qD-3Nb"/>
+                        <outlet property="reenterPasswordTextField" destination="SB2-Ez-Nof" id="IXw-sE-ULL"/>
+                        <segue destination="GdF-zj-ihI" kind="show" identifier="goToNewsFeed" id="ap4-fq-adg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -222,6 +226,34 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="31.875" y="38.028169014084504"/>
+        </scene>
+        <!--News FeedVC-->
+        <scene sceneID="CT5-dg-Rpg">
+            <objects>
+                <viewController id="GdF-zj-ihI" customClass="NewsFeedVC" customModule="PetApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QNY-1G-2yt"/>
+                        <viewControllerLayoutGuide type="bottom" id="1rU-ap-zNp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="p4X-si-p6c">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="54l-U0-iWC">
+                                <rect key="frame" x="43" y="28" width="93" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sign Out"/>
+                                <connections>
+                                    <action selector="signOutBtnTapped:" destination="GdF-zj-ihI" eventType="touchUpInside" id="gqS-qy-rEM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lZs-j1-jRE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="806.25" y="39.08450704225352"/>
         </scene>
     </scenes>
     <resources>
