@@ -12,6 +12,9 @@
 		2601897D1E58ADAF008F9A02 /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2601897C1E58ADAF008F9A02 /* FancyButton.swift */; };
 		262220AC1E598C5B005C0566 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262220AB1E598C5B005C0566 /* constants.swift */; };
 		262220AE1E59943B005C0566 /* NewsFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262220AD1E59943B005C0566 /* NewsFeedVC.swift */; };
+		262220B01E59B0A2005C0566 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262220AF1E59B0A2005C0566 /* ShadowView.swift */; };
+		262220B31E59FDAD005C0566 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262220B21E59FDAD005C0566 /* ProfileVC.swift */; };
+		262220B51E59FDCC005C0566 /* EditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262220B41E59FDCC005C0566 /* EditProfileVC.swift */; };
 		269A93841E57AD4C00DE21A4 /* Amazing.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 269A93831E57AD4C00DE21A4 /* Amazing.ttf */; };
 		26FBDA441E579F3E00E3BB4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FBDA431E579F3E00E3BB4F /* AppDelegate.swift */; };
 		26FBDA491E579F3E00E3BB4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26FBDA471E579F3E00E3BB4F /* Main.storyboard */; };
@@ -30,6 +33,9 @@
 		2601897C1E58ADAF008F9A02 /* FancyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
 		262220AB1E598C5B005C0566 /* constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 		262220AD1E59943B005C0566 /* NewsFeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsFeedVC.swift; sourceTree = "<group>"; };
+		262220AF1E59B0A2005C0566 /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		262220B21E59FDAD005C0566 /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		262220B41E59FDCC005C0566 /* EditProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileVC.swift; sourceTree = "<group>"; };
 		269A93831E57AD4C00DE21A4 /* Amazing.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Amazing.ttf; sourceTree = "<group>"; };
 		26FBDA401E579F3E00E3BB4F /* PetApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26FBDA431E579F3E00E3BB4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +128,8 @@
 			children = (
 				26FBDA5A1E57A63200E3BB4F /* SignInVC.swift */,
 				262220AD1E59943B005C0566 /* NewsFeedVC.swift */,
+				262220B21E59FDAD005C0566 /* ProfileVC.swift */,
+				262220B41E59FDCC005C0566 /* EditProfileVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -131,6 +139,7 @@
 			children = (
 				260189721E584183008F9A02 /* FancyView.swift */,
 				2601897C1E58ADAF008F9A02 /* FancyButton.swift */,
+				262220AF1E59B0A2005C0566 /* ShadowView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -290,10 +299,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				262220B51E59FDCC005C0566 /* EditProfileVC.swift in Sources */,
 				26FBDA5B1E57A63200E3BB4F /* SignInVC.swift in Sources */,
 				262220AE1E59943B005C0566 /* NewsFeedVC.swift in Sources */,
 				26FBDA441E579F3E00E3BB4F /* AppDelegate.swift in Sources */,
+				262220B31E59FDAD005C0566 /* ProfileVC.swift in Sources */,
 				260189731E584183008F9A02 /* FancyView.swift in Sources */,
+				262220B01E59B0A2005C0566 /* ShadowView.swift in Sources */,
 				260189781E58584B008F9A02 /* DataService.swift in Sources */,
 				2601897D1E58ADAF008F9A02 /* FancyButton.swift in Sources */,
 				262220AC1E598C5B005C0566 /* constants.swift in Sources */,
