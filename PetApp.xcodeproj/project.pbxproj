@@ -106,10 +106,10 @@
 		26FBDA421E579F3E00E3BB4F /* PetApp */ = {
 			isa = PBXGroup;
 			children = (
-				262220AA1E598C33005C0566 /* Utilities */,
-				260189791E585E8E008F9A02 /* PetApp.entitlements */,
-				260189761E585837008F9A02 /* services */,
 				26FBDA431E579F3E00E3BB4F /* AppDelegate.swift */,
+				260189791E585E8E008F9A02 /* PetApp.entitlements */,
+				262220AA1E598C33005C0566 /* Utilities */,
+				260189761E585837008F9A02 /* services */,
 				269A93821E57AC1F00DE21A4 /* Resources */,
 				26FBDA591E57A60200E3BB4F /* Model */,
 				26FBDA581E57A5FA00E3BB4F /* View */,

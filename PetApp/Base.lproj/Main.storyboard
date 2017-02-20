@@ -197,13 +197,13 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.54380136990000005" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x7i-zn-yfz" customClass="FancyView" customModule="SocialApp" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x7i-zn-yfz" customClass="FancyView" customModule="PetApp" customModuleProvider="target">
                                 <rect key="frame" x="16" y="258" width="288" height="65"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Jw2-0l-tQf">
                                         <rect key="frame" x="8" y="8" width="272" height="49"/>
                                         <subviews>
-                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="gR1-tT-BX2" customClass="CircleView" customModule="SocialApp" customModuleProvider="target">
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="gR1-tT-BX2" customClass="CircleView" customModule="PetApp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="49" height="49"/>
                                                 <color key="backgroundColor" red="0.0" green="0.54347413779999998" blue="0.84375303980000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <gestureRecognizers/>
@@ -212,13 +212,13 @@
                                                     <constraint firstAttribute="width" constant="49" id="MSs-Qe-vDQ"/>
                                                 </constraints>
                                             </imageView>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add a caption" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R6n-WM-QsD" customClass="FancyField" customModule="SocialApp" customModuleProvider="target">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add a caption" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R6n-WM-QsD" customClass="FancyField" customModule="PetApp" customModuleProvider="target">
                                                 <rect key="frame" x="59" y="0.0" width="154" height="49"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwo-fb-8vz" customClass="roundButton" customModule="SocialApp" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwo-fb-8vz" customClass="roundButton" customModule="PetApp" customModuleProvider="target">
                                                 <rect key="frame" x="223" y="0.0" width="49" height="49"/>
                                                 <color key="backgroundColor" red="0.9794066548" green="0.21525645260000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -361,7 +361,7 @@
                                         </constraints>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pet App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ac-SI-jCb">
-                                        <rect key="frame" x="43.5" y="230" width="234" height="85.5"/>
+                                        <rect key="frame" x="43" y="230" width="234" height="85.5"/>
                                         <fontDescription key="fontDescription" name="InfiniteStroke-Bolder" family="Infinite Stroke" pointSize="61"/>
                                         <color key="textColor" red="0.89759618043899536" green="0.37111112475395203" blue="0.17514047026634216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -471,6 +471,7 @@
                         <outlet property="passwordTextField" destination="Hyw-SO-Slu" id="bAW-qD-3Nb"/>
                         <outlet property="reenterPasswordTextField" destination="SB2-Ez-Nof" id="IXw-sE-ULL"/>
                         <segue destination="GdF-zj-ihI" kind="show" identifier="goToNewsFeed" id="ap4-fq-adg"/>
+                        <segue destination="hE4-SH-72g" kind="show" identifier="goToEditProfile" id="yfN-qF-hTX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -678,6 +679,9 @@
                                         <state key="normal" title="Save">
                                             <color key="titleColor" red="0.30196078430000001" green="0.81568627449999997" blue="0.88235294119999996" alpha="0.96652932359999999" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="saveBtnTapped:" destination="hE4-SH-72g" eventType="touchUpInside" id="WOH-u8-cRK"/>
+                                        </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tAK-Um-1F1" customClass="ShadowView" customModule="PetApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="20" width="320" height="45"/>
@@ -776,6 +780,9 @@
                             <constraint firstItem="sR3-Ep-vCB" firstAttribute="top" secondItem="SRa-Oo-gFh" secondAttribute="top" id="tJ4-Uf-flk"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="usernameField" destination="GMx-7m-ecX" id="joe-dO-XKL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nsZ-bY-EOL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -31,7 +31,16 @@ class SignInVC: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         if let _ = KeychainWrapper.standard.string(forKey: KEY_UID) {
             print("Anže found key")
-            performSegue(withIdentifier: "goToNewsFeed", sender: nil)
+            let currentUser = FIRAuth.auth()?.currentUser
+            DataService.ds.REF_USERS.child((currentUser?.uid)!).observe(.value, with: { (snapshot) in
+                let value = snapshot.value as? NSDictionary
+                let username = value?["username"] as? String
+                if username == nil {
+                    self.performSegue(withIdentifier: "goToEditProfile", sender: nil)
+                } else {
+                    self.performSegue(withIdentifier: "goToNewsFeed", sender: nil)
+                }
+            })
         } else {
             print("Anže key wasnt found")
         }
@@ -53,9 +62,10 @@ class SignInVC: UIViewController {
     }
     
     func signInComplete(id: String, userData: Dictionary<String, String>) {
+        DataService.ds.createfirebaseDBUser(uid: id, userData: userData)
         let keychainResult = KeychainWrapper.standard.set(id, forKey: KEY_UID)
         print("Anže: Data saved to keychain \(keychainResult)")
-        performSegue(withIdentifier: "goToNewsFeed", sender: nil)
+        performSegue(withIdentifier: "goToEditProfile", sender: nil)
         
     }
     
